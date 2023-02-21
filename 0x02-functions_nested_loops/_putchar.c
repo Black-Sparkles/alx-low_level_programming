@@ -3,7 +3,7 @@
 
 /**
  * _putchar - writes the character c to stdout
- * @c: the character
+ * @c: the character to print
  * Return 0n success 1.
  * 0n error, -1 is returned, and error is set appropriatedly.
  */

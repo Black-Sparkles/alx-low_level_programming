@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - Prints 10 lines the numbers from 0 to 10
+ * more_numbers - Prints 10 lines
  * Return: 10 times of numbers 0 to 10
  */
 

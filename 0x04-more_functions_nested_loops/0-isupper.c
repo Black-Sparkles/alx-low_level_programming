@@ -6,9 +6,9 @@
  * Return: 1 for upper letter or 0 for anything else
  */
 
-int _isupper(int c)
+int _isupper(int x)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (x >= 'A' && x <= 'Z')
 	{
 	return (1);
 	}

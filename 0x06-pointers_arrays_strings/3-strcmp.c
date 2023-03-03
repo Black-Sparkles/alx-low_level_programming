@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcmp - compares pointers to two strings
+ * _strcmp - compares pointers tO  strings
  * @s1: point to the first string 
  * @s2: point to the second string
- * Return: if str1 < str2, -ive diff
+ * Return: If str1 < str2, -ive dif
  * If str1 == str2, 0
  * If str1 > str2, +ve diff
  */

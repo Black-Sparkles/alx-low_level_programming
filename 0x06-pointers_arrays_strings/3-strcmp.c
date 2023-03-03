@@ -7,6 +7,7 @@
  * Return: If str1 < str2, -ive dif
  * If str1 == str2, 0
  * If str1 > str2, +ve diff
+ *
  */
 
 int _strcmp(char *s1, char *s2)

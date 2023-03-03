@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strcmp - compares pointers tO  strings
- * @s1: point to the first string 
+ * _strcmp - compares pointers tO strings
+ * @s1: point to the first string
  * @s2: point to the second string
  * Return: If s1 < s2, -ive dif
  * If s1 == s2, 0

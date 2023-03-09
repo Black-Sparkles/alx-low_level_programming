@@ -3,7 +3,8 @@
 
 int check_for_prime(int n, int i);
 
-/**is_prime_number - returns if n is prime
+/**
+ * is_prime_number - returns if n is prime
  * @n: number
  * Return: integer value
  */
@@ -14,7 +15,7 @@ int is_prime_number(int n)
 }
 
 /**
- * check_prime - checks if n is prime
+ * check_for_prime - checks if n is prime
  * @n: number
  * @i: iteration
  * Return: 1 for prime or 0

@@ -2,51 +2,55 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - pointer to 2d array
- * @width: width
- * @height: height
- * Return: nothing
+ * alloc_grid - function declaration
+ * @width: array width
+ * @height: array height
+ * Return: array
+ */
+
+int **alloc_grid(int width, int height);
+
+/**
+ * alloc_grid - function definition
+ * @width: the array width
+ * @height: the array height
+ * Description: returns pointer to a 2D array
+ * Return: pointer to 2D array
  */
 
 int **alloc_grid(int width, int height)
 {
-	int i, j, k, l;
-	int **a;
+	int **grid;
+	int row;
+	int column;
 
 	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	a = malloc(sizeof(int *) * height);
-
-	if (a == NULL)
 	{
-		free(a);
 		return (NULL);
 	}
 
-	for (i = 0; i < height; i++)
+	grid = malloc(sizeof(int *) * height);
+	if (grid == NULL)
 	{
-		a[i] = malloc(sizeof(int) * width);
+		return (NULL);
+	}
 
-		if (a[i] == NULL)
+	for (row = 0; row < height; row++)
+	{
+		grid[row] = malloc(sizeof(int) * width);
+		if (grid[row] == NULL)
 		{
-			for (j = 1; j >= 0; j--)
+			for (column = 0; column < row; column++)
 			{
-				free(a[j]);
+				free(grid[column]);
 			}
-
-			free(a);
+			free(grid);
 			return (NULL);
 		}
-	}
-
-	for (k = 0; k < height; k++)
-	{
-		for (l = 0; l < width; l++)
+		for (column = 0; column < width; column++)
 		{
-			a[k][l] = 0;
+			grid[row][column] = 0;
 		}
 	}
-
-	return (a);
+	return (grid);
 }

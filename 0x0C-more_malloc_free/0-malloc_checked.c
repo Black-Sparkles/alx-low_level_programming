@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates 
+ * malloc_checked - allocates
  * @b: size
  * Return: nothing
  */

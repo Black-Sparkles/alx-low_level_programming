@@ -8,14 +8,6 @@
  * Return: nothing
  */
 
-void *malloc_checked(unsigned int b);
-/**
- * malloc_checked - allocates
- * @b: size
- * Description: if p is null then exit is 98
- * Return: nothing
- */
-
 void *malloc_checked(unsigned int b)
 {
 	void *p;

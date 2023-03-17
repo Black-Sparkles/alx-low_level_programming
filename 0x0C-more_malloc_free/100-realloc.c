@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _realloc - function 
+ * _realloc - function
  * @ptr: ptr
  * @old_size: old size
  * @new_size: new size

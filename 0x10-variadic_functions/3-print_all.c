@@ -53,7 +53,6 @@ int print_s(va_list a)
 /**
  * print_all - prints all
  * @format: format string that says arg types
- *
  */
 void print_all(const char * const format, ...)
 {
@@ -68,7 +67,6 @@ void print_all(const char * const format, ...)
 		{"f", print_f},
 		{NULL, NULL}
 	};
-
 	va_start(anyArgument, format);
 	i = 0;
 	while (format != NULL && format[i])

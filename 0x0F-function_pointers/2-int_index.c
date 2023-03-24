@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 /**
  * int_index - indexes array
- * @array: array 
+ * @array: array
  * @size: size of array
  * @cmp: function for size
  * Return: intial value

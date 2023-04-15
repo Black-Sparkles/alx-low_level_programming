@@ -16,8 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 
-	for (lens = 0; b[lens] != '\0'; lens++)
-		;
+	for (lens = 0; b[lens] != '\0'; lens++);
 
 	i = (lens - 1);
 	for (; i >= 0; i--)
